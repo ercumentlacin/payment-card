@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap');
+
+body {
+    background: #ddeefc;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 15px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin-inline: auto;
+    overflow-x: hidden;
+}

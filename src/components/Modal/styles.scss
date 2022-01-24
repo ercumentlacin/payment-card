@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+
+.toast {
+  position: absolute;
+  right: -365px;
+  top: 1em;
+  transition: 0.15s ease-in-out;
+}
+
+.toast.on {
+  transform: translateX(-365px);
+}
+
+.toast__svg{
+  fill:#fff;
+}
+
+.toast {
+  width: 300px;
+  text-align:left;
+  padding: 21px 10px;
+  background-color:#fff;
+  border-radius:4px;
+  max-width: 500px;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toast__icon{
+ 
+  width:14px;
+  height:14px;
+  padding: 7px;
+  border-radius:50%;
+  display:inline-block;
+}
+
+.toast__type {
+  color: #3e3e3e;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.toast__message {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #878787;
+}
+
+.toast__content{
+  flex-grow: 6;
+  margin-left: 1rem;
+}
+
+.toast__close {
+
+  width: 14px;
+  cursor:pointer;
+  height: 14px;
+  fill:#878787;
+}
+
+.toast--green .toast__icon{
+  background-color:#2BDE3F;
+}
+
+.toast--green:before{
+  background-color:#2BDE3F;
+}
+
+.toast--red .toast__icon{
+  background-color:#ff0707;
+}
+
+.toast--red:before{
+  background-color:#ff0707;
+}
